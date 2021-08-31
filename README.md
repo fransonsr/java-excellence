@@ -11,14 +11,14 @@ The `tdd/refactoring` directory contains projects that you can import into your 
 
 Directory | Description
 --------- | -----------
-`0.0-CollectingParameter-Example` | Code for the "Collecting Parameter" example. (This is optional.)
-`1.0-AutomatedRefactoring-Problem` | Code for the "Automated Refactoring" excercise. (Including "Rename Method", "Rename Field", "Extract Method" and "Pull Up".)
-`1.5-AutomatedRefactoring-Solution` | Solution code for the "Automated Refactoring" excercise.
-`2.0-SmellectionsPart1-Problem` | Code for the "Smellections, Part 1" excercise. (Including "Compose Method", "Safe Delete", "Inline Variable" and "Extract Method".)
-`2.5-SmellectionsPart1-Solution` | Solution code for "Smellections, Part 1."
-`3.0-SmellectionsPart2-Problem` | Code for the "Smellections, Part 2" excercise. (Including "Caller Creates", "Caller Swap" and "Encapsulate Field".)
-`3.5-SmellectionsPart2-Solution` | Solution code for "Smellections, Part 2."
-`4.0-SmellectionsPart3-Problem` | Code for the "Smellections, Part 3" excercise. (Including "Extract Method", "Rename Method", "Pull Up", "Extract Local Variable" and "Rename local Variable"
-`4.5-SmellectionsPart3-Solution` | Solution code for "Smellections, Part 3."
-`5.0-SmellectionsPart4-Problem` | Code for the "Smellections, Part 4" excercise. (Including "Introduce Scaffolding".)
-`5.5-SmellectionsPart4-Solution` | Solution code for "Smellections, Part 4."
+<code>0.0&#x2011;CollectingParameter&#x2011;Example</code> | Code for the "Collecting Parameter" example. (This is optional.)
+<code>1.0&#x2011;AutomatedRefactoring&#x2011;Problem</code> | Code for the "Automated Refactoring" excercise. (Including "Rename Method", "Rename Field", "Extract Method" and "Pull Up".)
+<code>1.5&#x2011;AutomatedRefactoring&#x2011;Solution</code> | Solution code for the "Automated Refactoring" excercise.
+<code>2.0&#x2011;SmellectionsPart1&#x2011;Problem</code> | Code for the "Smellections, Part 1" excercise. (Including "Compose Method", "Safe Delete", "Inline Variable" and "Extract Method".)
+<code>2.5&#x2011;SmellectionsPart1&#x2011;Solution</code> | Solution code for "Smellections, Part 1."
+<code>3.0&#x2011;SmellectionsPart2&#x2011;Problem</code> | Code for the "Smellections, Part 2" excercise. (Including "Caller Creates", "Caller Swap" and "Encapsulate Field".)
+<code>3.5&#x2011;SmellectionsPart2&#x2011;Solution</code> | Solution code for "Smellections, Part 2."
+<code>4.0&#x2011;SmellectionsPart3&#x2011;Problem</code> | Code for the "Smellections, Part 3" excercise. (Including "Extract Method", "Rename Method", "Pull Up", "Extract Local Variable" and "Rename local Variable"
+<code>4.5&#x2011;SmellectionsPart3&#x2011;Solution</code> | Solution code for "Smellections, Part 3."
+<code>5.0&#x2011;SmellectionsPart4&#x2011;Problem</code> | Code for the "Smellections, Part 4" excercise. (Including "Introduce Scaffolding".)
+<code>5.5&#x2011;SmellectionsPart4&#x2011;Solution</code> | Solution code for "Smellections, Part 4."
