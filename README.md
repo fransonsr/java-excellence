@@ -7,7 +7,7 @@ The `tdd` directory contains problem and solution code for the TDD class.
 
 ### Refactoring module
 
-The `tdd/refactoring` directory contains projects that you can import into your IDE (Eclipse / Intellij IDEA) for practice or to view the solutions. 
+The `tdd/refactoring` directory contains projects that you can import into your IDE (Eclipse / Intellij IDEA) for practice or to view the solutions. The projects are set up as standard Maven projects, so as to make them easier to import into any IDE that supports Maven. 
 
 Directory | Description
 --------- | -----------
