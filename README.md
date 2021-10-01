@@ -1,6 +1,9 @@
 # java-excellence
 Java Excellence Excercises
 
+## IDE Resources
+- [IntelliJ IDEA keymap for Eclipse](https://marketplace.eclipse.org/content/intellij-idea-keymap-eclipse)
+
 ## Test-Driven Development
 
 The `tdd` directory contains problem and solution code for the TDD class.
@@ -22,3 +25,21 @@ Directory | Description
 <code>4.5&#x2011;SmellectionsPart3&#x2011;Solution</code> | Solution code for "Smellections, Part 3."
 <code>5.0&#x2011;SmellectionsPart4&#x2011;Problem</code> | Code for the "Smellections, Part 4" excercise. (Including "Introduce Scaffolding".)
 <code>5.5&#x2011;SmellectionsPart4&#x2011;Solution</code> | Solution code for "Smellections, Part 4."
+
+### Microtesting module
+
+The `tdd/microtesting` directory contains projects you can import into your IDE (Eclipse / IntelliJ IDEA) for the Microtesting module. The projects are standard Maven projects. Note that in some projects, the tests fail intentionally.
+
+Directory | Description
+--------- | -----------
+<code>0.0&#x2011;AllAboutXUnit&#x2011;Example<code> | Example using xUnit. (Optional.)
+<code>1.0&#x2011;SoundCheck&#x2011;Problem</code> | Sound Check excercise.
+<code>2.0&#x2011;SmallIsSuperb&#x2011;Problem</code> | Small is Superb excercise (refactoring a large test into microtests).
+<code>2.5&#x2011;SmallIsSuperb&#x2011;Solution</code> | Instructor solution to the Small is Superb excercise.
+<code>3.0&#x2011;AssertThat&#x2011;Example | Example of using AssertJ's assertThat().
+<code>4.0&#x2011;TailQueuePart1&#x2011;Problem | Tail queue excercise, part 1. (Basic microtesting.)
+<code>4.5&#x2011;TailQueuePart1&#x2011;Solution | Solution to Tail queue excercise, part 1.
+<code>5.0&#x2011;TailQueuePart3&#x2011;Problem | Tail queue excercise, part 3. (Complex scenarios.)
+<code>5.5&#x2011;TailQueuePart3&#x2011;Solution | Solution to the Tail queue excerise, part 3.
+  
+(Yes, that is correct; there is no "part 2" of the Tail queue excercise.)
