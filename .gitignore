@@ -28,3 +28,11 @@ bin/
 *.iml
 *.ipr
 *.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Eclipse wants to create a .gitignore file in each of the projects
+tdd/**/.gitignore
