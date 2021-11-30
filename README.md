@@ -32,7 +32,7 @@ The `tdd/microtesting` directory contains projects you can import into your IDE 
 
 Directory | Description
 --------- | -----------
-<code>0.0&#x2011;AllAboutXUnit&#x2011;Example<code> | Example using xUnit. (Optional.)
+<code>0.0&#x2011;AllAboutXUnit&#x2011;Example</code> | Example using xUnit. (Optional.)
 <code>1.0&#x2011;SoundCheck&#x2011;Problem</code> | Sound Check excercise.
 <code>2.0&#x2011;SmallIsSuperb&#x2011;Problem</code> | Small is Superb excercise (refactoring a large test into microtests).
 <code>2.5&#x2011;SmallIsSuperb&#x2011;Solution</code> | Instructor solution to the Small is Superb excercise.
@@ -43,3 +43,19 @@ Directory | Description
 <code>5.5&#x2011;TailQueuePart3&#x2011;Solution | Solution to the Tail queue excerise, part 3.
   
 (Yes, that is correct; there is no "part 2" of the Tail queue excercise.)
+  
+### Test Driven Development module
+
+The `tdd/testDrivenDevelopment` directory contains projects you can import into your IDE for the Test Driven Development module. The projects are standard Maven projects.
+
+Directory | Description
+--------- | -----------
+<code>1.0&#x2011;SoundCheckTest&#x2011;Problem</code> | Sound Check exercise (duplicate of the microtesting project).
+<code>2.0&#x2011;TDDRhythm&#x2011;Problem</code> | TDD Rhythm problem.
+<code>2.5&#x2011;TDDRhythm&#x2011;Solution</code> | TDD Rhythm solution.
+<code>3.0&#x2011;WildWildWireless&#x2011;Problem</code> | Initial project structure for the Wild West Wireless problem.
+<code>3.5.1&#x2011;WildWestWirelessTask1&#x2011;Solution</code> | Instructor's solution to Task 1 of the Wild West Wireless problem. 
+<code>3.5.2&#x2011;WildWestWirelessTask2&#x2011;Solution</code> | Instructor's solution to Task 2 of the Wild West Wireless problem. 
+<code>3.5.3&#x2011;WildWestWirelessTask3&#x2011;Solution</code> | Instructor's solution to Task 3 of the Wild West Wireless problem. 
+<code>3.5.4&#x2011;WildWestWirelessTask4&#x2011;Solution</code> | Instructor's solution to Task 4 of the Wild West Wireless problem. 
+  
