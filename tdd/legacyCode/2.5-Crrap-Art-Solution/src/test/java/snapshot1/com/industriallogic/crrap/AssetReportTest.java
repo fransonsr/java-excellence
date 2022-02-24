@@ -9,7 +9,7 @@
 // written consent of Industrial Logic, Inc.
 // ****************************************************************************
 
-package com.industriallogic.crrap;
+package snapshot1.com.industriallogic.crrap;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -108,7 +108,7 @@ public class AssetReportTest {
 		assertEquals(xml, stringWriter.toString());
 
 	}
-	
+
 	@Test
 	public void multiGroup() throws Exception {
 		records.addRow(new String[] { "Alpha", "family", "Alpha Equity", QUANTITY_10, MARKET_PRICE_2, TOTAL_COST_4, RISK_75 });

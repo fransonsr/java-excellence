@@ -9,7 +9,7 @@
 // written consent of Industrial Logic, Inc.
 // ****************************************************************************
 
-package com.industriallogic.crrap;
+package snapshot2.com.industriallogic.crrap;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -45,20 +45,20 @@ public class AssetReportTest implements AssetReportConstants {
 
 	private void newRecordSetForFund() {
 		records = new RecordSet(new String[] {
-				ISSUE_GROUP, ISSUE_FAMILY, ISSUE_NAME, QUANTITY, MARKET_PRICE, 
+				ISSUE_GROUP, ISSUE_FAMILY, ISSUE_NAME, QUANTITY, MARKET_PRICE,
 				FUND_PER_UNIT_COST, FUND_ASSESSED_RISK });
 	}
 
 	private void newRecordSetForEquity() {
 		records = new RecordSet(new String[] {
-				ISSUE_GROUP, ISSUE_FAMILY, ISSUE_NAME, QUANTITY, MARKET_PRICE, 
+				ISSUE_GROUP, ISSUE_FAMILY, ISSUE_NAME, QUANTITY, MARKET_PRICE,
 				EQUITY_TOTAL_COST, EQUITY_SIMPLE_RISK_COEFFICIENT });
 	}
 
 	@Test
 	public void singleEquity() throws Exception {
 		newRecordSetForEquity();
-		records.addRow(new String[] { "Equities", "family", "Equity", 
+		records.addRow(new String[] { "Equities", "family", "Equity",
 				QUANTITY_10, MARKET_PRICE_2, TOTAL_COST_4, RISK_75 });
 
 		StringWriter stringWriter = new StringWriter();
@@ -73,7 +73,7 @@ public class AssetReportTest implements AssetReportConstants {
 	@Test
 	public void singleMoneyMarket() throws Exception {
 		newRecordSetForFund();
-		records.addRow(new String[] { "Funds", "FUND", "Fund", QUANTITY_10, 
+		records.addRow(new String[] { "Funds", "FUND", "Fund", QUANTITY_10,
 				MARKET_PRICE_2, PER_UNIT_COST_1, RISK_CEILING_10 });
 
 		StringWriter stringWriter = new StringWriter();
@@ -88,9 +88,9 @@ public class AssetReportTest implements AssetReportConstants {
 	@Test
 	public void mixed() throws Exception {
 		newRecordSetForFund();
-		records.addRow(new String[] { "Assets", "family", "Equity", QUANTITY_10, 
+		records.addRow(new String[] { "Assets", "family", "Equity", QUANTITY_10,
 				MARKET_PRICE_2, TOTAL_COST_4, RISK_75 });
-		records.addRow(new String[] { "Assets", "family", "Fund", QUANTITY_10, 
+		records.addRow(new String[] { "Assets", "family", "Fund", QUANTITY_10,
 				MARKET_PRICE_2, PER_UNIT_COST_1, RISK_CEILING_10 });
 
 		StringWriter stringWriter = new StringWriter();
@@ -106,11 +106,11 @@ public class AssetReportTest implements AssetReportConstants {
 	@Test
 	public void sameTypeSameGroup() throws Exception {
 		newRecordSetForEquity();
-		records.addRow(new String[] { "Alpha", "family", "Alpha Equity", 
+		records.addRow(new String[] { "Alpha", "family", "Alpha Equity",
 				QUANTITY_10, MARKET_PRICE_2, TOTAL_COST_4, RISK_75 });
-		records.addRow(new String[] { "Alpha", "family", "Beta Equity", 
+		records.addRow(new String[] { "Alpha", "family", "Beta Equity",
 				QUANTITY_10, MARKET_PRICE_2, TOTAL_COST_4, RISK_75 });
-		records.addRow(new String[] { "Alpha", "family", "Delta Equity", 
+		records.addRow(new String[] { "Alpha", "family", "Delta Equity",
 				QUANTITY_10, MARKET_PRICE_2, TOTAL_COST_4, RISK_75 });
 
 		StringWriter stringWriter = new StringWriter();
@@ -124,7 +124,7 @@ public class AssetReportTest implements AssetReportConstants {
 		assertEquals(xml, stringWriter.toString());
 
 	}
-	
+
 	@Test
 	public void multiGroup() throws Exception {
 		newRecordSetForEquity();

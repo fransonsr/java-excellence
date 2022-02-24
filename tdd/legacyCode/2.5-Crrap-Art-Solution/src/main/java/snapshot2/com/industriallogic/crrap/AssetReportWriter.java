@@ -9,7 +9,7 @@
 // written consent of Industrial Logic, Inc.
 // ****************************************************************************
 
-package com.industriallogic.crrap;
+package snapshot2.com.industriallogic.crrap;
 
 import java.io.PrintWriter;
 import java.math.BigDecimal;

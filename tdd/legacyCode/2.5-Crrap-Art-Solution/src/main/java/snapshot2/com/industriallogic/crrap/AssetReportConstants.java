@@ -9,7 +9,7 @@
 // written consent of Industrial Logic, Inc.
 // ****************************************************************************
 
-package com.industriallogic.crrap;
+package snapshot2.com.industriallogic.crrap;
 
 public interface AssetReportConstants {
 	static final String ISSUE_NAME = "ISSUE_NAME";
@@ -24,6 +24,6 @@ public interface AssetReportConstants {
 
 	static final String EQUITY_TOTAL_COST = "TERM_ONE";
 	static final String EQUITY_SIMPLE_RISK_COEFFICIENT = "TERM_TWO";
-	
+
 	static final String FUND_NAME_PREFIX = "FUND";
 }

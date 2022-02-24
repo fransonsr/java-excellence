@@ -9,7 +9,7 @@
 // written consent of Industrial Logic, Inc.
 // ****************************************************************************
 
-package untouchable;
+package snapshot1.untouchable;
 
 import java.math.BigDecimal;
 

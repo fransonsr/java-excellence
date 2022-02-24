@@ -9,7 +9,7 @@
 // written consent of Industrial Logic, Inc.
 // ****************************************************************************
 
-package com.industriallogic.crrap;
+package snapshot2.com.industriallogic.crrap;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -23,7 +23,7 @@ public class AssetGroup {
 	HashMap<String, String> assetToGroup;
 	HashMap<String, BigDecimal> riskHashtable;
 
-	public AssetGroup(String currentGroupName, BigDecimal position, BigDecimal weight, 
+	public AssetGroup(String currentGroupName, BigDecimal position, BigDecimal weight,
 			HashMap<String, String> assetToGroup, HashMap<String, BigDecimal> riskHashtable) {
 		this.currentGroupName = currentGroupName;
 		this.position = position;
@@ -38,7 +38,7 @@ public class AssetGroup {
 		reportWriter.writeGroupWeight(weight);
 		reportWriter.writeCloseTag();
 		reportWriter.writeGroupName(currentGroupName);
-		
+
 		Iterator<String> positionsIterator = positions.keySet().iterator();
 		boolean firstOne = true;
 		while (positionsIterator.hasNext()) {

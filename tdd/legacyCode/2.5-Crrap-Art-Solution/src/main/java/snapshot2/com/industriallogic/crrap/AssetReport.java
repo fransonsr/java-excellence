@@ -9,7 +9,7 @@
 // written consent of Industrial Logic, Inc.
 // ****************************************************************************
 
-package com.industriallogic.crrap;
+package snapshot2.com.industriallogic.crrap;
 
 import java.io.PrintWriter;
 import java.math.BigDecimal;
@@ -45,7 +45,7 @@ public class AssetReport implements AssetReportConstants {
 
 	private void writeReport(AssetReportWriter reportWriter) {
 		reportWriter.writeRootTagStart();
-		
+
 		// groups in sorted order
 		Iterator<String> groupTotalsIterator = groupTotalsMap.keySet().iterator();
 		while (groupTotalsIterator.hasNext()) {
@@ -53,7 +53,7 @@ public class AssetReport implements AssetReportConstants {
 			BigDecimal position = groupTotalsMap.get(currentGroupName);
 			BigDecimal product = position.multiply(new BigDecimal(100));
 			BigDecimal weight = product.divide(sumAllPositions, 2, BigDecimal.ROUND_HALF_UP);
-			
+
 			AssetGroup assetGroup = new AssetGroup(currentGroupName, position, weight,
 					assetToGroup, riskHashtable);
 			assetGroup.writeGroup(reportWriter, positions);
@@ -73,7 +73,7 @@ public class AssetReport implements AssetReportConstants {
 				// pos = quantity * (market-unit price[FUND_ASSESSED_RISK])
 				// EquityPosition = (Quantity * Market Price) - Total
 				// EquityRisk = Position * Risk Coefficient
-				                                           
+
 				BigDecimal perItem = records.getDecimal(row, MARKET_PRICE).subtract(records.getDecimal(row, FUND_PER_UNIT_COST));
 				position = perItem.multiply(quantity(records, row)).setScale(2, BigDecimal.ROUND_HALF_UP);
 				BigDecimal riskCoefficient = assessor.getRiskCoefficient(records.getItem(row, ISSUE_FAMILY), records
@@ -89,10 +89,10 @@ public class AssetReport implements AssetReportConstants {
 				product = records.getDecimal(row, EQUITY_SIMPLE_RISK_COEFFICIENT).multiply(position);
 			}
 			risk = product.divide(new BigDecimal("100.00"), 2, BigDecimal.ROUND_HALF_UP);
-						
+
 			positions.put(issue, position);
 			sumAllPositions = sumAllPositions.add(positions.get(issue));
-		
+
 			String issueGroup = records.getItem(row, ISSUE_GROUP);
 			assetToGroup.put(records.getItem(row, ISSUE_NAME), issueGroup);
 			BigDecimal value = addGroupTotal(issue, issueGroup);

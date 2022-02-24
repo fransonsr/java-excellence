@@ -9,7 +9,7 @@
 // written consent of Industrial Logic, Inc.
 // ****************************************************************************
 
-package com.industriallogic.crrap;
+package snapshot1.com.industriallogic.crrap;
 
 import java.io.PrintWriter;
 import java.math.BigDecimal;
@@ -34,11 +34,11 @@ public class AssetReport {
 
 	public void execute(RecordSet records, PrintWriter writer) {
 		TreeMap<String, BigDecimal> groupTotal;
-		
+
 		// Store positions for all assets
 		TreeMap<String, BigDecimal> positions;
 		BigDecimal allPositions;
-		
+
 		// Risks for all assets
 		HashMap<String, BigDecimal> m_hmRiskTable;
 		HashMap<String, String> assetToGroup;
@@ -71,7 +71,7 @@ public class AssetReport {
 				positions.put(issue, pos);
 			}
 			allPositions = allPositions.add(positions.get(issue));
-		
+
 			String group = records.getItem(row, "ISSUE_GROUP");
 			String name = records.getItem(row, "ISSUE_NAME");
 			assetToGroup.put(name, group);
@@ -82,7 +82,7 @@ public class AssetReport {
 			groupTotal.put(group, value.setScale(2));
 			m_hmRiskTable.put(issue, r);
 		}
-		
+
 		writer.write("<groups>\n");
 		// groups in sorted order
 		Iterator<String> g = groupTotal.keySet().iterator();
