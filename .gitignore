@@ -36,3 +36,6 @@ bin/
 
 # Eclipse wants to create a .gitignore file in each of the projects
 tdd/**/.gitignore
+
+# Maven generated
+target/
